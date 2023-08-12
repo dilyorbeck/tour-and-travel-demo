@@ -1,0 +1,398 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="">
+ <!-- Navbar -->
+ <nav class="container mx-auto px-2 pt-5 md:px-0 md:mt-10">
+    <!-- Flex container -->
+    <div class="flex items-center justify-between">
+      <!-- Logo -->
+      <div class="pt-2">
+        <img src="/img/main-logo.png" alt="" />
+      </div>
+      <!-- Menu Items -->
+      <div class="hidden items-center space-x-6 md:flex">
+        <a href="#" class="text-lightGray text-sm font-light hover:text-normalBlack">Home</a>
+        <a href="#" class="text-lightGray text-sm font-light hover:text-normalBlack">Destinations</a>
+        <a href="#" class="text-lightGray text-sm font-light hover:text-normalBlack">About</a>
+        <a href="#" class="text-lightGray text-sm font-light hover:text-normalBlack">Partner</a>
+        <button class="py-2 px-10 text-sm text-lightOrange border border-lightOrange rounded-lg hover:text-white hover:bg-lightOrange">Login</button>
+        <button class="py-2 px-10 text-sm border border-lightOrange rounded-lg text-white bg-lightOrange hover:text-lightOrange hover:bg-white">Register</button>
+      </div>
+      <!-- Hamburger Icon -->
+      <button
+        id="menu-btn"
+        class="block hamburger md:hidden focus:outline-none" >
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden">
+      <div
+        id="menu"
+        class="flex-col space-y-3 items-center hidden"
+      >
+      <a href="#" class="text-lightGray text-sm font-light hover:text-normalBlack">Home</a>
+      <a href="#" class="text-lightGray text-sm font-light hover:text-normalBlack">Destinations</a>
+      <a href="#" class="text-lightGray text-sm font-light hover:text-normalBlack">About</a>
+      <a href="#" class="text-lightGray text-sm font-light hover:text-normalBlack">Partner</a>
+      <button class="py-2 px-10 text-sm text-lightOrange border border-lightOrange rounded-lg hover:text-white hover:bg-lightOrange">Login</button>
+      <button class="py-2 px-10 text-sm border border-lightOrange rounded-lg text-white bg-lightOrange hover:text-lightOrange hover:bg-white">Register</button>
+      </div>
+    </div>
+ </nav>
+ <!-- Hero Section -->
+ <section id="hero">
+  <div class="container px-2 mx-auto text-center md:px-0 md:text-left md:mt-16 ">
+    <div class="flex flex-col space-y-5 md:flex-row md:space-x-32 md:space-y-0">
+    <div class="md:w-1/2 md:mt-5">
+      <h1 class="font-semibold text-6xl text-normalBlack">
+        Explore and Travel
+      </h1>
+      <h5 class="font-medium text-lg mt-16">
+        Holiday finder
+      </h5>
+      <hr class="mt-4 h-[2px] mx-auto w-full rounded bg-normalBlack md:w-7 md:mx-0"></hr>
+     <div class="mt-10 grid md:grid-cols-2 gap-y-7 md:gap-x-6">
+        <select class="border rounded-md flex items-center justify-center px-6 mr-4 w-full h-10">
+          <option value="0">Location</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+        </select>
+        <select class="border rounded-md flex items-center justify-center pl-6 pr-4 w-full h-10">
+          <option value="0">Activity</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+        </select>
+        <select class="border rounded-md flex items-center justify-center pl-6 pr-4 w-full h-10">
+          <option value="0">Grade</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+        </select>
+        <select class="border rounded-md items-center justify-center pl-6 pr-4 w-full h-10">
+          <option value="0">Date</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+        </select>
+     </div>
+     <button class="mt-11 py-2 px-10 text-sm border border-lightOrange rounded-lg text-white bg-lightOrange hover:text-lightOrange hover:bg-white">Explore</button>
+    </div>
+    <div class="md:w-1/2">
+      <img src="/img/destinations.png" alt="">
+    </div>
+    </div>
+     <img src="/img/circle.png" class="hidden h-5 w-5 -ml-28 -mt-56 absolute md:block" alt="">
+      <img src="/img/plus.png" class="hidden h-4 w-4 absolute rotate-12 -mt-[28rem] ml-[26rem] md:block" alt="">
+  </div>
+ </section>
+ <!-- Exploration of world -->
+ <section id="guides">
+    <div class="container mx-auto text-center mt-20 px-2 md:px-0 md:mt-48 md:text-left">
+      <div class="flex flex-col space-y-8 md:space-y-0 md:space-x-20 md:flex-row">
+        <div class="md:w-1/2 mx-auto">
+          <img src="/img/exploring-world.png" alt="">
+        </div>
+      <div class="md:w-1/2 mt-12 md:mt-32">
+        <h1 class="font-semibold text-3xl text-normalBlack leading-[42px] md:pr-32">
+          A new way to explore the world 
+        </h1>
+        <p class="text-lightGray pt-4 md:mr-10">
+          For decades travellers have reached for Lonely Planet books when looking to plan and execute their perfect trip, but now, they can also let Lonely Planet Experiences lead the way
+        </p>
+        <button class="mt-7 py-2 px-10 text-sm border border-lightOrange rounded-lg text-white bg-lightOrange hover:text-lightOrange hover:bg-white">Learn more</button>
+      </div>
+    </div>
+    <img src="/img/circle.png" class="hidden h-4 w-4 absolute ml-10 ml-[51rem] -mt-40 md:block" alt="">
+      <img src="/img/plus.png" class="hidden h-4 w-4 absolute ml-[28rem] -mt-96 md:block" alt="">
+    </div>
+ </section>
+ <!-- Featured destinations -->
+ <section id="destinations">
+  <div class="container mx-auto mt-20 px-2 md:px-0 md:mt-56">
+    <div class="flex justify-between pb-12">
+      <h1 class="text-left font-semibold text-3xl text-normalBlack leading-[42px]">
+        Featured destinations
+       </h1>
+       <a href="#" class="text-lightOrange text-sm font-medium leading-[51px] hover:text-orange-300">View all ></a>
+    </div>
+    <div class="flex flex-col pt-5 pb-12 space-y-5 md:space-y-0 md:space-x-3 md:flex-row">
+      <div class="md:w-1/4 mx-auto">
+        <div class="relative">
+          <img src="/img/raja-ampat.png" class="rounded-t-xl rounded-br-xl" alt="">
+          <span class="absolute bg-white -mt-[56px] pb-1 pt-2 pr-5 rounded-tr-xl">
+            <h6 class="font-medium">Raja Ampat</h6>
+            <p class="text-lightGray">Indonesia</p>
+          </span>
+        </div>
+      </div>
+      <div class="md:w-1/4 mx-auto">
+        <div class="relative">
+          <img src="/img/fanjingshan.png" class="rounded-t-xl rounded-br-xl" alt="">
+          <span class="absolute bg-white -mt-[56px] pb-1 pt-2 pr-5 rounded-tr-xl">
+            <h6 class="font-medium">Fanjingshan</h6>
+            <p class="text-lightGray">China</p>
+          </span>
+        </div>
+      </div>
+      <div class="md:w-1/4 mx-auto">
+        <div class="relative">
+          <img src="/img/vevey.png" class="rounded-t-xl rounded-br-xl" alt="">
+          <span class="absolute bg-white -mt-[56px] pb-1 pt-2 pr-5 rounded-tr-xl">
+            <h6 class="font-medium">Vevey</h6>
+            <p class="text-lightGray">Switzerland</p>
+          </span>
+        </div>
+      </div>
+      <div class="md:w-1/4 mx-auto">
+        <div class="relative">
+          <img src="/img/skadar.png" class="rounded-t-xl rounded-br-xl" alt="">
+          <span class="absolute bg-white -mt-[56px] pb-1 pt-2 pr-5 rounded-tr-xl">
+            <h6 class="font-medium">Skadar</h6>
+            <p class="text-lightGray">Montenegro</p>
+          </span>
+        </div>
+      </div> 
+    </div>
+    <img src="/img/circle.png" class="hidden w-4 h-4 absolute -mt-[32rem] ml-[50rem] md:block" alt="">
+    <img src="/img/plus.png" class="hidden w-4 h-4 absolute -mt-40 -ml-28 md:block" alt="">
+    <img src="/img/circle.png" class="hidden w-4 h-4 absolute -mt-2 ml-[26rem] md:block" alt="">
+  </div>
+ </section>
+ <!-- Guides by Thousand Sunny -->
+ <section id="guides">
+  <div class="container mx-auto text-center px-2 md:px-0 md:mt-48 md:text-left">
+    <div class="flex flex-col space-y-8 md:space-y-0 md:space-x-10 md:flex-row">
+    <div class="md:w-1/2 mt-12 md:mt-32">
+      <h1 class="font-semibold text-3xl text-normalBlack leading-[42px] md:pr-32">
+        Guides by Thousand Sunny
+      </h1>
+      <p class="text-lightGray pt-4 md:mr-10">
+        Packed with tips and advice from our on-the-ground experts, our city guides app (iOS and Android) is the ultimate resource before and during a trip.
+      </p>
+      <button class="mt-7 py-2 px-10 text-sm border border-lightOrange rounded-lg text-white bg-lightOrange hover:text-lightOrange hover:bg-white">Download</button>
+    </div>
+    <div class="md:w-1/2 mx-auto">
+      <img src="/img/guides.png" alt="">
+    </div>
+  </div>
+  <img src="/img/circle.png" class="hidden h-4 w-4 absolute ml-10 -mt-[22rem] md:block" alt="">
+    <img src="/img/plus.png" class="hidden h-3 w-3 absolute ml-[64rem] -mt-[25rem] md:block" alt="">
+    <img src="/img/plus.png" class="hidden h-4 w-4 absolute ml-96 -mt-[5.5rem] rotate-12 md:block" alt="">
+  </div>
+ </section>
+ <!-- Testimonials -->
+ <section id="testimonials">
+  <div class="container mx-auto mt-20 text-center px-2 md:px-0 md:text-left md:mt-52">
+    <h1 class="font-semibold text-3xl text-normalBlack leading-[42px] pb-12">
+      Testimonials
+     </h1>
+     <div class="flex flex-col space-y-5 md:space-y-0 md:space-x-5 md:flex-row">
+    <div class="md:w-1/2">
+      <div class="flex justify-center space-x-1  md:mt-32 md:justify-start">
+        <i class="fa-solid fa-star h-5 w-5 text-lightYellow"></i>
+        <i class="fa-solid fa-star h-5 w-5 text-lightYellow"></i>
+        <i class="fa-solid fa-star h-5 w-5 text-lightYellow"></i>
+        <i class="fa-solid fa-star h-5 w-5 text-lightYellow"></i>
+        <i class="fa-solid fa-star h-5 w-5 text-lightYellow"></i>
+      </div>
+      <p class="text-xl leading-8 mt-6 md:mr-32">
+        “Quisque in lacus a urna fermentum euismod. Integer mi nibh, dapibus ac scelerisque eu, facilisis quis purus. Morbi blandit sit amet turpis nec”
+      </p>
+      <h6 class="mt-9 font-semibold text-lg">
+        Edward Newgate
+      </h6>
+      <p class="text-lightGray leading-10">
+        Founder Circle
+      </p>
+    </div>
+    <div class="md:w-1/2 z-1">
+      <div class="relative">
+        <img src="/img/edward-newgate.png" class="z-10 rounded-t-xl w-full mx-auto md:mx-0" alt="">
+       <div class="flex justify-end">
+        <span class="bg-white -mt-[56px] pl-6 pt-4 rounded-tl-xl">
+          <button>
+            <i class="fa-solid fa-chevron-left px-3 py-2 border rounded-full border-lightGray  text-lightGray hover:text-normalBlack hover:border-normalBlack"></i>
+          </button>
+          <button>
+            <i class="fa-solid fa-chevron-right  px-3 py-2 border rounded-full text-normalBlack border-normalBlack hover:border-lightGray hover:text-lightGray"></i>
+          </button>
+        </span>
+       </div>
+      </div>
+     </div>
+    </div>
+    <img src="/img/circle.png" class="hidden h-5 w-5 absolute -ml-20 -mt-96 md:block" alt="">
+    <img src="/img/circle.png" class="hidden h-9 w-9 absolute ml-[59.5rem] -mt-[39rem] -z-10 md:block" alt="">
+    <img src="/img/plus.png" class="hidden h-7 w-7 absolute ml-[30.4rem] -mt-4 md:block" alt="">
+    </div>
+  </div>
+ </section>
+ <!-- Trending Stories -->
+ <section id="trending-stories">
+  <div class="container mx-auto mt-20 px-2 md:px-0 md:mt-56">
+    <div class="flex justify-between">
+      <h1 class="text-left font-semibold text-3xl text-normalBlack leading-[42px]">
+        Trending Stories
+       </h1>
+       <a href="#" class="text-lightOrange text-sm font-medium leading-[51px] hover:text-orange-300">View all ></a>
+    </div>
+    <div class="flex flex-col text-center md:text-left pt-5 pb-12 space-y-5 md:space-y-0 md:space-x-3 md:flex-row">
+      <div class="md:w-1/4 text-center md:text-left">
+        <img src="/img/meditation.png" class="rounded-t-xl mx-auto" alt="">
+        <h6 class="font-medium text-base leading-7 my-3">
+          The many benefits of taking a healing holiday
+        </h6>
+        <p class="text-lightGray leading-6 text-sm pb-5">
+          ‘Helaing holidays’ are on the rise tohelp maximise your health and happines...
+        </p>
+        <a href="#" class="text-lightOrange text-sm font-medium hover:text-orange-300">Read more</a>
+      </div>
+      <div class="md:w-1/4 text-center md:text-left">
+        <img src="/img/japanese-food.png" class="rounded-t-xl mx-auto" alt="">
+        <h6 class="font-medium text-base leading-7 my-3">
+          The best Kyoto restaurant to try Japanese food
+        </h6>
+        <p class="text-lightGray leading-6 text-sm pb-5">
+          From tofu to teahouses, here’s our guide to Kyoto’s best restaurants
+          to visit...
+        </p>
+        <a href="#" class="text-lightOrange text-sm font-medium hover:text-orange-300">Read more</a>
+      </div>
+      <div class="md:w-1/4 text-center md:text-left">
+        <img src="/img/chichen-itza.png" class="rounded-t-xl mx-auto" alt="">
+        <h6 class="font-medium text-base leading-7 my-3">
+          Skip Chichen Itza and head to this remote Yucatan
+        </h6>
+        <p class="text-lightGray leading-6 text-sm pb-5">
+          It’s remote and challenging to get, but braving the jungle and exploring these ruins without the...
+        </p>
+        <a href="#" class="text-lightOrange text-sm font-medium hover:text-orange-300">Read more</a>
+      </div>
+      <div class="md:w-1/4 text-center md:text-left">
+        <img src="/img/surfing.png" class="rounded-t-xl mx-auto" alt="">
+        <h6 class="font-medium text-base leading-7 my-3">
+          Surf’s up at these beginner  spots around the world
+        </h6>
+        <p class="text-lightGray leading-6 text-sm pb-5">
+          If learning to surf has in on your to-do list for a while, the good news is: it’s never too late...
+        </p>
+        <a href="#" class="text-lightOrange text-sm font-medium hover:text-orange-300">Read more</a>
+      </div>
+    </div>
+    <img src="/img/circle.png" class="hidden absolute h-4 w-4 -ml-20 -mt-52 md:block" alt="">
+    <img src="/img/circle.png" class="hidden absolute h-4 w-4 ml-[39rem] md:block" alt="">
+    <img src="/img/plus.png" class="hidden absolute h-4 w-4 -mt-[35rem] ml-80 md:block" alt="">
+  </div>
+ </section>
+ <!-- Footer -->
+ <footer class="bg-whitishGray ">
+  <div class="container mx-auto md:mt-40 pt-14 text-center md:text-left">
+   <div class="flex flex-col  space-y-5 md:space-y-0 md:space-x-10 md:flex-row pb-16">
+    <div class="md:w-2/5">
+     <a href="#">
+      <img src="/img/main-logo.png" class="mx-auto md:mx-0" alt="">
+     </a>
+      <p class="text-brightGray pt-6 md:pr-10">Plan and book your perfect trip with 
+        expert advice, travel tips destination
+        information from us</p>
+        <p class="text-brightGray pt-12">
+          ©2020 Thousand Sunny. All rights reserved
+        </p>
+    </div>
+    <div class="md:w-1/5 pt-3">
+        <h6 class="font-medium text-base">
+          Destinations
+        </h6>
+        <ul>
+          <li>
+            <a href="#" class="text-brightGray hover:text-normalBlack">Africa</a>
+          </li>
+          <li>
+            <a href="#" class="text-brightGray hover:text-normalBlack">Antarctica</a>
+          </li>
+          <li>
+            <a href="#" class="text-brightGray hover:text-normalBlack">Asia</a>
+          </li>
+          <li>
+            <a href="#" class="text-brightGray hover:text-normalBlack">Europe</a>
+          </li>
+          <li>
+            <a href="#" class="text-brightGray hover:text-normalBlack">America</a>
+          </li>
+         </ul>
+    </div>
+    <div class="md:w-1/5 pt-3">
+          <h6 class="font-medium text-base">
+          Shop
+        </h6>
+        <ul>
+          <li>
+            <a href="#" class="text-brightGray hover:text-normalBlack"> Destination Guides</a>
+          </li>
+          <li>
+            <a href="#" class="text-brightGray hover:text-normalBlack">Pictorial & Gifts</a>
+          </li>
+          <li>
+            <a href="#" class="text-brightGray hover:text-normalBlack">Special Offers</a>
+          </li>
+          <li>
+            <a href="#" class="text-brightGray hover:text-normalBlack">Delivery Times</a>
+          </li>
+          <li>
+            <a href="#" class="text-brightGray hover:text-normalBlack">FAQs</a>
+          </li>
+         </ul>
+    </div>
+    <div class="md:w-1/5 pt-3">
+          <h6 class="font-medium text-base">
+          Intersets
+        </h6>
+        <ul>
+          <li>
+            <a href="#" class="text-brightGray hover:text-normalBlack"> Adventure Travel</a>
+          </li>
+          <li>
+            <a href="#" class="text-brightGray hover:text-normalBlack">Art And Culture</a>
+          </li>
+          <li>
+            <a href="#" class="text-brightGray hover:text-normalBlack">Wildlife And Nature</a>
+          </li>
+          <li>
+            <a href="#" class="text-brightGray hover:text-normalBlack">Family Holidays</a>
+          </li>
+          <li>
+            <a href="#" class="text-brightGray hover:text-normalBlack">Food And Drink</a>
+          </li>
+         </ul>
+    </div>
+  </div>
+  <div class="flex justify-center border-t border-lightGray py-6 space-x-7 text-lg">
+   <a href="#">
+    <i class="fa-brands fa-twitter  hover:text-lightGray"></i>
+   </a>
+   <a href="#">
+    <i class="fa-brands fa-facebook-f  hover:text-lightGray"></i>
+   </a>
+   <a href="#">
+    <i class="fa-brands fa-instagram  hover:text-lightGray"></i>
+   </a>
+   <a href="#">
+    <i class="fa-brands fa-linkedin-in  hover:text-lightGray"></i>
+   </a>
+   <a href="#">
+    <i class="fa-brands fa-youtube  hover:text-lightGray"></i>
+   </a>
+  </div>
+  </div>
+ </footer>
+<script src="/js/script.js"></script>
+</body>
+</html>
